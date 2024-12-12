@@ -13,7 +13,6 @@ ol,
 ul,
 li{
   list-style: none;
-
 }
 
 a{
@@ -33,7 +32,6 @@ header{
   background: rgb(164, 233, 230);
 }
 
-
 .header__inner{
   text-transform: uppercase;
 }
@@ -41,9 +39,8 @@ header{
 .menu__list{
   display: flex;
   justify-content: space-between;
-
-
 }
+
 .menu__item{
   height: 40px;
   
@@ -95,6 +92,29 @@ p{
 .section-image{}
 
 
+.secondary__title{
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.gallery__list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+  
+
+}
+.gallery__item{
+  width: 350px;
+  padding-bottom: 10px;
+
+}
+
+.gallery__img{
+  width: 300px;
+  height: 200px;
+}
 /* footer */
 .footer{
   background: rgb(169, 173, 207);
