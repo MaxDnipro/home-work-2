@@ -5,38 +5,48 @@
   line-height: 20px;
   color: #232323;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ol, 
 ul,
 li{
   list-style: none;
+
 }
 
 a{
   text-decoration: none;
   color: inherit;
-  font-size: 16px;
-  
 }
 
 .container{
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;  
-  padding: 10px;
-  margin: 10px auto;
+  padding: 0 10px;
   overflow: hidden;
 }
 
 /* header */
-.header{
+header{
   background: rgb(164, 233, 230);
-  text-transform: uppercase;  
 }
 
-.header__menu{
+
+.header__inner{
+  text-transform: uppercase;
+}
+
+.menu__list{
   display: flex;
   justify-content: space-between;
+
+
+}
+.menu__item{
+  height: 40px;
+  
 }
 
 
@@ -78,6 +88,7 @@ p{
 .section-content{
   flex-direction: column;
   align-self: center;
+  flex-wrap: wrap;
   padding: 20px;
   
 }
