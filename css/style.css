@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 ol, 
@@ -18,6 +19,13 @@ li{
 a{
   text-decoration: none;
   color: inherit;
+  font-size: 16px;
+}
+
+p{
+  font-size: 18px;
+  line-height: 1.25;
+  padding-bottom: 10px;
 }
 
 .container{
@@ -30,6 +38,7 @@ a{
 /* header */
 header{
   background: rgb(164, 233, 230);
+  height: 40px;
 }
 
 .header__inner{
@@ -38,25 +47,41 @@ header{
 
 .menu__list{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
 }
 
 .menu__item{
-  height: 40px;
-  
+  padding: 10px;
+}
+.menu__link:hover{
+  cursor:pointer;
+  color:blue; 
+}
+
+.menu__link:visited{
+  color: green;
 }
 
 
 /* main */
 
-h2{
-  font-size: 20px;
-  margin-left: 50px;
+.main__title{
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.25;
+}
+.secondary__title{
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 15px ;
 }
 
-h3{
+.third__title{
   font-size: 18px;
-  margin-left: 70px;
+  line-height: 1.25;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 p{
@@ -69,53 +94,134 @@ p{
   background:rgb(169, 207, 172);
 }
 
-.main-title{
-  color: black;
-  font-size: 24px;
-  text-align: center;
-
-}
-
-.main-section{
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.section-content{
+.section__content{
   flex-direction: column;
   align-self: center;
   flex-wrap: wrap;
   padding: 20px;
   
 }
-.section-image{}
-
-
-.secondary__title{
-  text-align: center;
-  font-size: 24px;
-  line-height: 1.5;
+.section__image{
+  display: block;
+  margin: 0 auto;
 }
+
+.quality__list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+
+}
+
+.quality__item{
+  width: 280px;
+  padding-bottom: 10px;
+}
+
+.quality__img{
+  position: relative;
+  bottom: 50px;
+  left: -10px;
+}
+
+.quality__list a{
+  color: blue; 
+}
+
+/* articles main*/
+.articles__text{
+  padding: 10px;
+}
+.articles__img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* gallery main */
 .gallery__list{
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  
-  
-
+  flex-wrap: wrap; 
 }
+
 .gallery__item{
   width: 350px;
   padding-bottom: 10px;
-
 }
 
 .gallery__img{
   width: 300px;
   height: 200px;
 }
+
+/* contacts form*/
+.form__section{
+  display: flex;
+  margin: 10px 0;
+  
+}
+.form{
+  margin: 0 auto; 
+}
+
+.form__section--img{
+  border: 2px solid green;
+}
+.form__fieldset{
+  border-color: green;
+  padding: 10px;
+}
+
+.form__text{
+  display: flex;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 260px;
+  border: 1px solid greenyellow;
+  border-radius: 6px;
+  color: #2e2e2e;
+  font-size: 16px;
+}
+
+.form__text--textarea{
+  resize:none;
+  height: 200px;}
+
+.form__text:focus{
+  border: 2px solid green;
+}
+
+.form__text::placeholder{
+  color: yellowgreen;
+}
+
+.form__btn{
+  display: block;
+  width: 50%;
+  padding: 8px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 6px;
+  background-color: yellowgreen;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
+.form__btn:focus{
+  background-color:green;
+  color: grey;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius:8px;
+  
+}
 /* footer */
+
 .footer{
-  background: rgb(169, 173, 207);
+  background: rgb(169, 173, 207); 
+}
+
+.footer__date{
+  padding: 10px;
 }
